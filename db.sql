@@ -54,7 +54,12 @@ CREATE TABLE IF NOT EXISTS smart.model (
   `year` int(8) NOT NULL,
   `fuel` VARCHAR(30) NOT NULL,
   PRIMARY KEY (`id`)
-)
+);
 
-INSERT INTO `model` (`id`, `make`, `model`, `power`, `year`, `fuel`) VALUES
-(2, 'BMW', 'Mailis', 125, 2015, 'a');
+INSERT INTO smart.model (`make`, `model`, `power`, `year`, `fuel`) VALUES
+  ('Volvo', 'V50', 100, 2006, 'Diesel'),
+  ('Volvo', 'XC70', 146, 2012, 'Diesel'),
+  ('Volvo', 'S80', 123, 2006, 'Diesel'),
+  ('Volvo', 'S80', 132, 2012, 'Diesel'),
+  ('Peugeot', '407', 85, 2009, 'Petrol'),
+  ('Peugeot', '407', 85, 2008, 'Petrol/Gas');
